@@ -3,3 +3,9 @@ body {
     color: white;
     font-family: Arial, Helvetica, sans-serif;
 }
+
+.main-container {
+    background-color: rgb(45, 53, 84);
+    outline: 5px;
+    margin: 20px;
+}
