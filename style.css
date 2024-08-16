@@ -19,9 +19,12 @@ body {
   }
   
   .widget-image {
-    width: 100%;
+    width: 30%;
     height: auto;
     display: block;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
   }
   
   .widget-name {
