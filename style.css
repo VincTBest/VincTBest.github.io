@@ -9,8 +9,21 @@ body {
   
   /* Widget Styles */
   .widget {
-    background-color: #ffffff;
-    border-radius: 8px;
+    background-color: rgb(57, 77, 107);
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+    margin: 20px auto;
+    overflow: hidden;
+    text-align: center;
+  }
+
+  .widget input {
+    border-style: solid;
+    border-color: rgb(36, 49, 67);
+    background-color: rgb(56, 75, 104);
+    color: whitesmoke;
+    border-radius: 4px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
     max-width: 300px;
     margin: 20px auto;
@@ -19,24 +32,21 @@ body {
   }
   
   .widget-image {
-    width: 30%;
+    width: 95%;
     height: auto;
-    display: block;
     display: block;
     margin-left: auto;
     margin-right: auto;
   }
   
-  .widget-name {
-    font-size: 1.5em;
-    color: #333333;
-    margin: 16px 0 8px;
-  }
-  
   .widget-description {
     font-size: 1em;
-    color: #666666;
+    color: #dcdcdc;
     margin: 0 16px 16px;
     line-height: 1.4;
+  }
+
+  .widget-view {
+    margin: 5px;
   }
   
