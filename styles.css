@@ -15,7 +15,7 @@ body {
     max-width: 300px;
     margin: 20px auto;
     overflow: hidden;
-    text-align: center;
+    display: inline;
   }
 
   .widget input {
