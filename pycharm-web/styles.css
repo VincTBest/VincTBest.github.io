@@ -6,8 +6,8 @@ body {
 
 .container {
     display: flex;
-    height: 100vh;
     flex-direction: column;
+    height: 100vh;
 }
 
 header {
@@ -18,14 +18,7 @@ header {
 
 .toolbar {
     display: flex;
-    justify-content: space-around;
-}
-
-.sidebar {
-    background-color: #f0f0f0;
-    width: 200px;
-    padding: 10px;
-    box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+    justify-content: center;
 }
 
 .editor {
@@ -40,4 +33,12 @@ header {
     font-family: monospace;
     padding: 10px;
     box-sizing: border-box;
+}
+
+#output {
+    background-color: #f0f0f0;
+    padding: 10px;
+    border-top: 1px solid #ddd;
+    max-height: 200px;
+    overflow-y: auto;
 }

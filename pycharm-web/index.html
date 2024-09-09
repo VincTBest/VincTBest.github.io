@@ -10,21 +10,13 @@
     <div class="container">
         <header>
             <div class="toolbar">
-                <button>File</button>
-                <button>Edit</button>
-                <button>Run</button>
+                <button id="run-button">Run</button>
             </div>
         </header>
-        <aside class="sidebar">
-            <ul>
-                <li>Project</li>
-                <li>Files</li>
-                <li>Version Control</li>
-            </ul>
-        </aside>
         <main class="editor">
-            <textarea id="code-editor" placeholder="Write your code here..."></textarea>
+            <textarea id="code-editor" placeholder="Write your Python code here..."></textarea>
         </main>
+        <div id="output"></div>
     </div>
     <script src="script.js"></script>
 </body>
