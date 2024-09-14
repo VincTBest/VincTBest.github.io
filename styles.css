@@ -15,7 +15,7 @@ body {
     max-width: 300px;
     margin: 20px auto;
     overflow: hidden;
-    display: inline;
+    text-align: center;
   }
 
   .widget input {
@@ -43,9 +43,13 @@ body {
     font-size: 1em;
     color: #dcdcdc;
     margin: 0 16px 16px;
-    line-height: 1.4;
+    line-height: 1.1;
   }
 
   .widget-view {
     margin: 5px;
+  }
+
+  .widgets {
+    display: inline;
   }
