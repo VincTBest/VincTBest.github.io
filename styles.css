@@ -10,7 +10,7 @@ body {
 /* Navbar Styles */
 .navbar {
   background-color: rgb(57, 77, 107);
-  padding: 10px 1px;  /* Increased padding */
+  padding: 15px 1px;  /* Increased padding */
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   position: fixed;
   width: 100%;
@@ -20,13 +20,25 @@ body {
 
 .navbar-container {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
+  width: 100%;
+}
+
+.navbar-left {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  left: 10px;
+  color: white;
+  font-size: 1.5em;
+  text-decoration: none;
+  padding-left: 10px;
 }
 
 .navbar-logo {
   color: white;
-  font-size: 1.5em;
+  font-size: 1em;
   text-decoration: none;
   padding-left: 10px;
 }
@@ -52,6 +64,12 @@ body {
 .navbar-link:hover {
   background-color: rgb(36, 49, 67);
   border-radius: 4px;
+}
+
+.navbar-img {
+  width: 35px;
+  height: 35px;
+  padding: 3px 3px 3px 3px;
 }
 
 /* Widget Styles */
