@@ -4,17 +4,17 @@
         "0": {
             "title": "test 123-0",
             "img": "news_0",
-            "desc": "0 Lorem ipsum dolor sit amet, consectetur\nadipiscing elit. Vestibulum in sapien\nullamcorper, suscipit dui vitae,\ntincidunt eros."
+            "desc": "0 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum in sapien ullamcorper, suscipit dui vitae, tincidunt eros."
         },
         "1": {
             "title": "test 456-1",
             "img": "news_1",
-            "desc": "1 Lorem ipsum dolor sit amet, consectetur\nadipiscing elit. Vestibulum in sapien\nullamcorper, suscipit dui vitae,\ntincidunt eros."
+            "desc": "1 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum in sapien ullamcorper, suscipit dui vitae, tincidunt eros."
         },
         "2": {
             "title": "test 789-2",
             "img": "news_2",
-            "desc": "2 Lorem ipsum dolor sit amet, consectetur\nadipiscing elit. Vestibulum in sapien\nullamcorper, suscipit dui vitae,\ntincidunt eros."
+            "desc": "2 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum in sapien ullamcorper, suscipit dui vitae, tincidunt eros."
         }
     }
 }
