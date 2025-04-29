@@ -1,0 +1,87 @@
+<html>
+
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=windows-1252">
+</head>
+
+<body>
+    <header>
+        <link rel="stylesheet" href="api.css">
+    </header>
+
+    <h1>Vinc's Framework (1.0)</h1>
+
+    <h2>Vinc's Framework</h2>
+
+    <br>
+
+    <div class="quote">
+        <p><b>A Lua framework built for Teardown Modding, by <a href="https://github.com/vinctbest" target="_blank">VinceTheBest</a></b>. Every Function starts with <b>VFW</b>.</p>
+        <p>It has every function that most people will need.
+    </div>
+    <p>
+        <a href="https://teardowngame.com/modding/api.html" target="_blank">Teardown API</a><br>
+        <a href="https://teardowngame.com/modding" target="_blank">Teardown Modding</a><br>
+    </p>
+
+    <hr>
+    <h2>Registry</h2>
+    <p>
+        <a href="#VFWCreateIfNot">VFWCreateIfNot</a><br>
+    </p>
+    <hr>
+    <h2>User Interface</h2>
+    <p>
+        <a href="#VFWUiCenter">VFWUiCenter</a><br>
+    </p>
+    <hr>
+    <h2>Registry</h2><br>
+
+    <a name="VFWCreateIfNot"></a>
+    <h3 class="function">VFWCreateIfNot</h3>
+    <pre
+        class="funcdef"><span class="retname">setdefault = </span>VFWCreateIfNot(<span class="argname">type, address, default</span>)</pre>
+    <p>Arguments<br>
+        <span class="argname">type</span> <span class="argtype">("string", "int", "float", "bool")</span> - The type of data stored.<br>
+        <span class="argname">address</span> <span class="argtype">(string)</span> - The address the data is stored at<br>
+        <span class="argname">default</span> <span class="argtype">(any)</span> - The default value the data will be reset to.<br>
+    </p>
+    <p>Return value<br><span class="retname">bool</span><span class="argtype" ( TYPE )</span> - If the default value is set.<br>
+    </p>
+    <p>If the Registry exists than returns false, else sets the Registry to the default value and returns true.<br>
+    </p>
+    <pre class="example">
+    if VFWCreateIfNot("int", "savegame.mod.gamescore", 0) then
+        DebugPrint("Score is: "..GetInt("savegame.mod.gamescore"))
+    else
+        DebugPrint("Reset to default value")
+    end
+    </pre>
+
+    <hr>
+
+    <h2>User Interface</h2><br>
+
+    <a name="VFWUiCenter"></a>
+    <h3 class="function">VFWUiCenter</h3>
+    <pre
+        class="funcdef"><span class="retname"></span>VFWUiCenter(<span class="argname"></span>)
+    </pre>
+    <p>Arguments<br>
+        <span class="argname">none</span> <span class="argtype"></span><br>
+    </p>
+    <p>Return value<br>
+        <span class="retname">none</span> <span class="argtype"></span><br>
+    </p>
+    <p>Translates to the center of the screen.<br>
+    </p>
+    <pre class="example">
+    VFWUiCenter()
+    UiFont("bold.ttf", 24)
+    UiText("On Screen Center")
+    </pre>
+    <hr>
+
+</body>
+
+</html>
