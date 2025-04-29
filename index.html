@@ -6,12 +6,16 @@
     <title>VincTBest's Website</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="shortcut icon" href="favicon_transparent.ico" type="image/x-icon">
+    <script src="https://www.gstatic.com/firebasejs/9.x.x/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.x.x/firebase-auth.js"></script>
 </head>
 <body>
 <nav class="navbar">
     <div class="navbar-container">
-        <div class="navbar-left" >
-            <a href="https://github.com/VincTBest" target="_blank"> <img class="navbar-img" src="favicon_2.png" alt="Illuminati"></a>
+        <div class="navbar-left">
+            <a href="https://github.com/VincTBest" target="_blank">
+                <img class="navbar-img" src="favicon_2.png" alt="Illuminati">
+            </a>
             <a href="index.html" class="navbar-logo">VincTBest</a>
         </div>
         <ul class="navbar-menu">
@@ -19,6 +23,9 @@
             <li><a href="pc.html" class="navbar-link">PC</a></li>
             <li><a href="https://github.com/VincTBest?tab=repositories" target="_blank" class="navbar-link">All Projects</a></li>
         </ul>
+        <div class="navbar-right">
+            <a href="login.html" id="login-link" class="navbar-link">Login</a>
+        </div>
     </div>
 </nav>
 <div class="main-container">
@@ -33,5 +40,28 @@
         </div>
     </div>
 </div>
+<script>
+    // Firebase configuration
+    const firebaseConfig = {
+        apiKey: "AIzaSyCFKGKA71wwQqpCUsF000RZoiXKAExM3pY",
+        authDomain: "vinctbest-github-io.firebaseapp.com",
+        projectId: "vinctbest-github-io",
+        storageBucket: "vinctbest-github-io.appspot.com",
+        messagingSenderId: "310367770308",
+        appId: "1:310367770308:web:2807727974d29e426a5b91",
+        measurementId: "G-YS1Y5NMY07"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+
+    // Check if the user is logged in
+    firebase.auth().onAuthStateChanged(user => {
+        const loginLink = document.getElementById('login-link');
+        if (user) {
+            loginLink.textContent = 'Profile';
+            loginLink.href = 'profile.html';
+        }
+    });
+</script>
 </body>
 </html>
