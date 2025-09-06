@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BTRNT</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 2rem;
+            background: #f9f9f9;
+        }
+        .selector-container {
+            max-width: 400px;
+            margin: 2rem auto;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+            padding: 2rem;
+        }
+        .selector-label {
+            font-size: 1.1rem;
+            margin-bottom: 1rem;
+            display: block;
+        }
+        .selector-dropdown {
+            width: 100%;
+            padding: 0.5rem;
+            font-size: 1rem;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+            margin-bottom: 1rem;
+        }
+        .go-btn {
+            padding: 0.5rem 1.5rem;
+            font-size: 1rem;
+            border: none;
+            border-radius: 4px;
+            background: #0078d4;
+            color: #fff;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+        .go-btn:hover {
+            background: #005fa3;
+        }
+    </style>
+</head>
+<body>
+    <div class="selector-container" id="redirectSelector"></div>
+
+    <script>
+        // Modular item list
+        const redirectItems = [
+            { label: "Home", url: "/index.html" },
+            { label: "Login Page", url: "/magnet/local/index.html" },
+            { label: "Non-existent Page", url: "/btrnt/local/page/non.html" },
+            { label: "Non-existent Page", url: "/btrnt/local/page/non.html" },
+            { label: "Non-existent Page", url: "/btrnt/local/page/non.html" }
+        ];
+
+        // Modular UI rendering function
+        function createRedirectSelector(containerId, items) {
+            const container = document.getElementById(containerId);
+
+            const label = document.createElement('label');
+            label.className = 'selector-label';
+            label.textContent = 'Select a page to visit:';
+            label.setAttribute('for', 'pageSelector');
+
+            const select = document.createElement('select');
+            select.className = 'selector-dropdown';
+            select.id = 'pageSelector';
+
+            items.forEach(item => {
+                const option = document.createElement('option');
+                option.value = item.url;
+                option.textContent = item.label;
+                select.appendChild(option);
+            });
+
+            const button = document.createElement('button');
+            button.className = 'go-btn';
+            button.textContent = 'Go';
+            button.onclick = function() {
+                const url = select.value;
+                if (url) window.location.href = url;
+            };
+
+            container.appendChild(label);
+            container.appendChild(select);
+            container.appendChild(button);
+        }
+
+        // Initialize the selector
+        createRedirectSelector('redirectSelector', redirectItems);
+    </script>
+</body>
+</html>
