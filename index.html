@@ -38,38 +38,15 @@
                 <input type="submit" value="View" class="widget-view">
             </form>
         </div> -->
-        <div class="widget">
+        <!--<div class="widget">
             <img src="./icons/45surviwar2x.png" alt="45' Surviwar" class="widget-image">
             <h6 class="widget-description">45' Surviwar</h6>
             <p class="widget-description">45' Surviwar is a survival-war simulator game in 1940</p>
             <form action="45surviwar/index.html">
                 <input type="submit" value="More" class="widget-view">
             </form>
-        </div>
+        </div> -->
     </div>
 </div>
-<script>
-    // Firebase configuration
-    const firebaseConfig = {
-        apiKey: "AIzaSyCFKGKA71wwQqpCUsF000RZoiXKAExM3pY",
-        authDomain: "vinctbest-github-io.firebaseapp.com",
-        projectId: "vinctbest-github-io",
-        storageBucket: "vinctbest-github-io.appspot.com",
-        messagingSenderId: "310367770308",
-        appId: "1:310367770308:web:2807727974d29e426a5b91",
-        measurementId: "G-YS1Y5NMY07"
-    };
-    // Initialize Firebase
-    firebase.initializeApp(firebaseConfig);
-
-    // Check if the user is logged in
-    firebase.auth().onAuthStateChanged(user => {
-        const loginLink = document.getElementById('login-link');
-        if (user) {
-            loginLink.textContent = 'Profile';
-            loginLink.href = 'profile.html';
-        }
-    });
-</script>
 </body>
 </html>
