@@ -1,51 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>VincTBest's Website</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="shortcut icon" href="favicon_transparent.ico" type="image/x-icon">
-    <script src="https://www.gstatic.com/firebasejs/9.x.x/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/9.x.x/firebase-auth.js"></script>
-</head>
-<body>
-<nav class="navbar">
-    <div class="navbar-container">
-        <div class="navbar-left">
-            <a href="https://github.com/VincTBest" target="_blank">
-                <img class="navbar-img" src="favicon_2.png" alt="Illuminati">
-            </a>
-            <a href="index.html" class="navbar-logo">VincTBest</a>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>VincTBest's Website</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="shortcut icon" href="favicon_transparent.ico" type="image/x-icon">
+    </head>
+    <body>
+    <div id="navbar-appear"></div>
+        <div class="main-container">
+            <div class="widgets">
+                <!-- <div class="widget">
+                    <img src="./icons/pyconsole.png" alt="PyConsole" class="widget-image">
+                    <h6 class="widget-description">PyConsole</h6>
+                    <p class="widget-description">PyConsole is a CLI in Python</p>
+                    <form action="https://www.github.com/VincTBest/PyConsole" target="_blank">
+                        <input type="submit" value="View" class="widget-view">
+                    </form>
+                </div> do not expect these.
+                <div class="widget">
+                    <img src="./icons/45surviwar2x.png" alt="45' Surviwar" class="widget-image">
+                    <h6 class="widget-description">45' Surviwar</h6>
+                    <p class="widget-description">45' Surviwar is a survival-war simulator game in 1940</p>
+                    <form action="45surviwar/index.html">
+                        <input type="submit" value="View" class="widget-view">
+                    </form>
+                </div> -->
+            </div>
         </div>
-        <ul class="navbar-menu">
-            <li><a href="index.html" class="navbar-link">Home</a></li>
-            <li><a href="pc.html" class="navbar-link">PC</a></li>
-            <li><a href="https://github.com/VincTBest?tab=repositories" target="_blank" class="navbar-link">All Projects</a></li>
-        </ul>
-        <div class="navbar-right">
-        </div>
-    </div>
-</nav>
-<div class="main-container">
-    <div class="widgets">
-        <!-- <div class="widget">
-            <img src="./icons/pyconsole.png" alt="PyConsole" class="widget-image">
-            <h6 class="widget-description">PyConsole</h6>
-            <p class="widget-description">PyConsole is a CLI in Python</p>
-            <form action="https://www.github.com/VincTBest/PyConsole" target="_blank">
-                <input type="submit" value="View" class="widget-view">
-            </form>
-        </div> do not expect these.
-        <div class="widget">
-            <img src="./icons/45surviwar2x.png" alt="45' Surviwar" class="widget-image">
-            <h6 class="widget-description">45' Surviwar</h6>
-            <p class="widget-description">45' Surviwar is a survival-war simulator game in 1940</p>
-            <form action="45surviwar/index.html">
-                <input type="submit" value="View" class="widget-view">
-            </form>
-        </div> -->
-    </div>
-</div>
-</body>
+    </body>
+    <script src="navbar.js"></script>
 </html>
